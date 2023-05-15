@@ -14,7 +14,7 @@ body {
     
     position: relative;
     left: 58%;
-    top: 150px;
+    top: 160px;
     
 }
 .container3{
@@ -78,7 +78,8 @@ body {
   }
   .container1{
     position: relative static;
-    left:30%
+    left:30%;
+    top:160px;
   }
   .container3{
     position: relative static;
