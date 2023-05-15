@@ -1,0 +1,39 @@
+body{
+     background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+.container-fluid{
+    padding: 3% 15% 7%;
+}
+.navbar-brand {
+  font-family: "ubuntu";
+  font-size: 2.5rem;
+  font-weight:100;
+}
+.navbar {
+  padding: 0 0 4.5rem;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Roboto Serif',serif;
+}
+.nav-link:hover{
+    color: black;
+}
+.you {
+    position: absolute;
+    left:55%;
+    top: 280px;
+}
+@media (max-width:480px) {
+    .you{
+        position: absolute;
+        top: 50%;
+    }
+    
+}

@@ -1,0 +1,27 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-y: hidden;
+}
+.container{
+    text-align: center;
+    width:50px;
+    height: 800px;
+    display: flex;
+    justify-content: center left;
+    align-items:center;
+
+}
+@media (max-width:480px){
+    .container{
+    text-align: center;
+    width:50px;
+    height: 900px;
+    display: flex;
+    justify-content: center left;
+    align-items:center;
+
+    }
+}

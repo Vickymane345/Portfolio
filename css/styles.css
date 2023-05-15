@@ -1,0 +1,16 @@
+.container{
+    text-align: center;
+    width:300px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

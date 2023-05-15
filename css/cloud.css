@@ -1,0 +1,47 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.God {
+    font-family: 'Roboto Serif', serif;
+     color: white;
+}
+
+.container{
+    width:150%;
+    height: 400px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align: justify;
+    font-size: 20px;
+
+}
+.navbar-brand {
+  font-family: "ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.navbar {
+  padding: 0 0 4.5rem;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Roboto Serif',serif;
+}
+.nav-link:hover{
+    color: white;
+}
+@media (min-width:576){
+    
+}
