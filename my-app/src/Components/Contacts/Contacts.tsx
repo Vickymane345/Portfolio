@@ -39,8 +39,8 @@ export default function ContactForm() {
   return (
     <div className={` ${visibleSection === 4 ? "block" : "hidden"} md:py-10 h-full  `}>
       <Zoom >
-        <div className="md:grid md:grid-cols-2 grid grid-cols-1 md:px-5  items-center justify-evenly">
-        <div className="animate-bounce">
+        <div className="md:grid md:grid-cols-2 grid grid-cols-1 md:px-5 md:py-16 items-center justify-evenly">
+        <div className="animate-bounce ">
           <Image src={picture} alt="" className="w-56 md:w-full m-auto" />
         </div>
         <div className=" max-w-xl  p-6 m-auto md:m-0 bg-white rounded-2xl shadow-lg">
