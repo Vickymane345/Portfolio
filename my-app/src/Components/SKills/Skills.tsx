@@ -60,7 +60,7 @@ export default function Skills() {
   useEffect(() => {
     
     setCurrentIndex(0); 
-    const interval = setInterval(nextSlide, 4000); 
+    const interval = setInterval(nextSlide, 1800); 
     return () => clearInterval(interval); 
   }, []);
   const context = useContext(UserContext);
