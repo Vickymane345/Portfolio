@@ -14,7 +14,7 @@ const IntroZoom = () => {
   useEffect(() => {
     
     
-    const timer = setTimeout(() => setHide(true), 1000); // 2s delay
+    const timer = setTimeout(() => setHide(true), 800); // 2s delay
     return () => clearTimeout(timer);
   }, []);
 
