@@ -68,7 +68,7 @@ export default function Projects() {
       <div
         className={`${playfair.className} text-3xl lg:py-4 h-20 lg:h-0 font-extrabold block text-center underline`}
       >
-        <Typewriter text="THE JOURNEY SO FAR...." delay={1000} speed={200} />
+        <Typewriter text="PROJECTS...." delay={1000} speed={200} />
       </div>
       <Zoom>
         <section
