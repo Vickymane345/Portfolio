@@ -53,7 +53,7 @@ export default function Projects() {
 
   useEffect(() => {
       setCurrentIndex(0); 
-    const interval = setInterval(nextSlide, 1500);
+    const interval = setInterval(nextSlide, 1800);
     return () => clearInterval(interval); 
   }, []);
   const context = useContext(UserContext);
