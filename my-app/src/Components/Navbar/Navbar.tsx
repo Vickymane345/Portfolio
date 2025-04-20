@@ -37,7 +37,7 @@ function Navbar() {
       <nav
         className={`flex md:items-center  w-full   md:w-full md:h-full   md:px-14 md:py-6 ${theme ? "text-[#d1e6f1]" : "text-black  "}`}
       >
-        <Zoom delay={2000}>
+        <Zoom delay={1000}>
            <ul className="hidden  md:flex m-auto px-4 space-x-16  ">
           <li
             onClick={() => handleSectionChange(0)}
@@ -121,7 +121,7 @@ function Navbar() {
               </div>
               <h1 className="items-center">CONTACT</h1>
             </li>
-            <li className="cursor-pointer" >
+            <li>
               <button
                 className=" md:hidden"
                 title="handtheme"
