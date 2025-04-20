@@ -77,7 +77,7 @@ export default function Skills() {
       >
         <Typewriter text="THE JOURNEY SO FAR...." delay={1000} speed={200} />
       </div>
-      <Zoom delay={1500}>
+      <Zoom>
         <section
           className={`md:grid md:grid-cols-2 sm:grid sm:grid-cols-2 block  items-center justify-evenly m-auto lg:py-20 pb-7 lg:pb-0 ${theme ? "text-[#d1e6f1]" : "text-black"}`}
         >
