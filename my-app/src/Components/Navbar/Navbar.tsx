@@ -38,35 +38,35 @@ function Navbar() {
         className={`flex md:items-center  w-full   md:w-full md:h-full   md:px-14 md:py-6 ${theme ? "text-[#d1e6f1]" : "text-black  "}`}
       >
         <Zoom delay={2000}>
-           <ul className="hidden cursor-pointer md:flex m-auto px-4 space-x-16  ">
+           <ul className="hidden  md:flex m-auto px-4 space-x-16  ">
           <li
             onClick={() => handleSectionChange(0)}
-            className={`${visibleSection === 0 ? "border-b-2 border-[#2a3d52]" : "border-b-0 "}`}
+            className={`${visibleSection === 0 ? "border-b-2 border-[#2a3d52]" : "border-b-0 "} cursor-pointer`}
           >
             Home
           </li>
           <li
             id="#about"
             onClick={() => handleSectionChange(1)}
-            className={`${visibleSection === 1 ? "border-b-2 border-[#2a3d52]" : "border-b-0 "}`}
+            className={`${visibleSection === 1 ? "border-b-2 border-[#2a3d52]" : "border-b-0 "} cursor-pointer`}
           >
             About
           </li>
           <li
             onClick={() => handleSectionChange(2)}
-            className={`${visibleSection === 2 ? "border-b-2 border-[#2a3d52]" : "border-b-0 "}`}
+            className={`${visibleSection === 2 ? "border-b-2 border-[#2a3d52]" : "border-b-0 "} cursor-pointer`}
           >
             Skills
           </li>
           <li
             onClick={() => handleSectionChange(3)}
-            className={`${visibleSection === 3 ? "border-b-2 border-[#2a3d52]" : "border-b-0 "}`}
+            className={`${visibleSection === 3 ? "border-b-2 border-[#2a3d52]" : "border-b-0 "} cursor-pointer`}
           >
             Projects
           </li>
           <li
             onClick={() => handleSectionChange(4)}
-            className={`${visibleSection === 4 ? "border-b-2 border-[#2a3d52]" : "border-b-0 "}`}
+            className={`${visibleSection === 4 ? "border-b-2 border-[#2a3d52]" : "border-b-0 "} cursor-pointer`}
           >
             Contact
           </li>
@@ -121,7 +121,7 @@ function Navbar() {
               </div>
               <h1 className="items-center">CONTACT</h1>
             </li>
-            <li>
+            <li className="cursor-pointer" >
               <button
                 className=" md:hidden"
                 title="handtheme"
