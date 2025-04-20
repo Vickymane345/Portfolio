@@ -34,7 +34,7 @@ function Home() {
        
         <div className=" items-center block md:flex   md:gap-4 py-2 px-3">
           <div className="w-full px-3 lg:px-0       m-auto lg:order-2 md:order-2 ">
-            <Zoom delay={2000}>
+            <Zoom delay={1500}>
               <Image
                 src={picture}
                 className="w-80 md:w-full m-auto lg:w-full animate-bounce   md:m-auto "
@@ -44,7 +44,7 @@ function Home() {
           </div>
           <div className=" md:px-2  md:order-1">
             <Zoom
-              delay={2000}
+              delay={1500}
               className={`${theme ? "border-r-2 rounded-r-full border-[#2a3d52]" : " border-r-2 rounded-r-full border-black"}`}
             >
               <h1
@@ -63,7 +63,7 @@ function Home() {
                 />
               </h1>
             </Zoom>
-            <Zoom delay={2000} className="py-5">
+            <Zoom delay={1500} className="py-5">
               <p
                 className={`${playfair.className} text-pretty text-justify py-2  text-sm  md:text-lg   `}
               >
