@@ -56,19 +56,24 @@ export default function Skills() {
   const nextSlide = () => {
     setCurrentIndex((nextIndex) => (nextIndex + 1) % images.length);
   };
-
-  useEffect(() => {
-    
-    setCurrentIndex(0); 
-    const interval = setInterval(nextSlide, 1800); 
-    return () => clearInterval(interval); 
-  }, []);
+  
   const context = useContext(UserContext);
 
   if (!context) {
     throw new Error("UserContext must be used within a UserContext.Provider");
   }
   const { theme, handleSectionChange, visibleSection } = context;
+useEffect(() => {
+  let interval: NodeJS.Timeout;
+
+  if (visibleSection === 2) {
+    interval = setInterval(nextSlide, 2000);
+  }
+
+  return () => clearInterval(interval);
+}, [visibleSection]);
+
+
 
   return (
     <div className={`${visibleSection === 2 ? "block" : "hidden"}`}>
