@@ -50,27 +50,32 @@ export default function Projects() {
   const nextSlide = () => {
     setCurrentIndex((nextIndex) => (nextIndex + 1) % images.length);
   };
-
-  useEffect(() => {
-      setCurrentIndex(0); 
-    const interval = setInterval(nextSlide, 1800);
-    return () => clearInterval(interval); 
-  }, []);
-  const context = useContext(UserContext);
+    const context = useContext(UserContext);
 
   if (!context) {
     throw new Error("UserContext must be used within a UserContext.Provider");
   }
   const { theme, handleSectionChange, visibleSection } = context;
+  
+useEffect(() => {
+  let interval: NodeJS.Timeout;
+
+  if (visibleSection === 3) {
+    interval = setInterval(nextSlide, 2000);
+  }
+
+  return () => clearInterval(interval);
+}, [visibleSection]);
+
 
   return (
     <div className={`${visibleSection === 3 ? "block" : "hidden"}`}>
       <div
         className={`${playfair.className} text-3xl lg:py-4 h-20 lg:h-0 font-extrabold block text-center underline`}
       >
-        <Typewriter text="PROJECTS...." delay={1000} speed={200} />
+        <Typewriter text="THE JOURNEY SO FAR...." delay={1000} speed={200} />
       </div>
-      <Zoom>
+      <Zoom >
         <section
           className={`md:grid md:grid-cols-2 sm:grid sm:grid-cols-2 block items-center justify-evenly m-auto md:px-5 lg:px-0 lg:py-20 pb-7 lg:pb-0   ${theme ? "text-[#d1e6f1]" : "text-black "}`}
         >
